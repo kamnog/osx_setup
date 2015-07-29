@@ -5,7 +5,8 @@ if ! type brew; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   xcode-select --install
 else
-  echo 'brew is installed'
+  echo 'brew update'
+  brew update
 fi
 
 # helper functions
@@ -29,6 +30,21 @@ cask_install() {
   fi
 }
 
+brew_install_with_agents() {
+  if ! type $1; then
+    echo "installing: $1..."
+    brew install $1
+    echo 'agents installing...'
+    # To have launchd start redis at login:
+    ln -sfv /usr/local/opt/$1/*.plist ~/Library/LaunchAgents
+    # Then to load redis now:
+    launchctl load ~/Library/LaunchAgents/homebrew.mxcl.$1.plist
+    echo 'finished'
+  else
+    echo "$1 is installed"
+  fi
+}
+
 if ! type rbenv; then
   brew_install rbenv
   brew_install ruby-build
@@ -46,19 +62,18 @@ else
   echo 'rbenv and ruby installed'
 fi
 
-if ! type postgresql; then
-  brew install postgresql
-  # To have launchd start postgresql at login:
-  ln -sfv /usr/local/opt/postgresql/*plist ~/Library/LaunchAgents
-
-  # Then to load postgresql now:
-  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
-  echo 'postgresql installed'
-fi
+brew_install_with_agents postgresql
+brew_install_with_agents mysql
+brew_install_with_agents redis
+brew_install_with_agents mongodb
 
 #media
 
 brew_install caskroom/cask/brew-cask
+brew_install qt
+brew_install memcached
+brew_install imagemagick
+brew_install node
 
 cask_install google-chrome
 cask_install hipchat
@@ -68,3 +83,16 @@ cask_install dropbox
 cask_install firefox
 cask_install slack
 cask_install atom
+cask_install vlc
+cask_install sublime-text
+cask_install iterm2
+cask_install caffeine
+cask_install harvest
+cask_install todoist
+cask_install mailbox
+
+# cask_install f-lux
+# cask_install sunrise
+# cask_install quickcast
+
+# TODO autostart
