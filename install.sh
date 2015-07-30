@@ -74,6 +74,8 @@ brew_install qt
 brew_install memcached
 brew_install imagemagick
 brew_install node
+brew_install heroku
+brew_install bash-completion
 
 cask_install google-chrome
 cask_install hipchat
@@ -86,13 +88,21 @@ cask_install atom
 cask_install vlc
 cask_install sublime-text
 cask_install iterm2
-cask_install caffeine
 cask_install harvest
 cask_install todoist
 cask_install mailbox
+cask_install alfred
+cask_install bettertouchtool
 
-# cask_install f-lux
-# cask_install sunrise
-# cask_install quickcast
+# Settings
+defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock
 
-# TODO autostart
+# do robienia screenow
+# do niebieskiego swiatal
+
+# You need to install manualy:
+# f.lux
+# sunrise
+# quickcast
+# monosnap
+# caffeine
