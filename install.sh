@@ -76,6 +76,7 @@ brew_install imagemagick
 brew_install node
 brew_install heroku
 brew_install bash-completion
+brew_install elixir
 
 cask_install google-chrome
 cask_install hipchat
