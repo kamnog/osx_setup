@@ -67,8 +67,6 @@ brew_install_with_agents mysql
 brew_install_with_agents redis
 brew_install_with_agents mongodb
 
-#media
-
 brew_install caskroom/cask/brew-cask
 brew_install qt
 brew_install memcached
@@ -77,6 +75,8 @@ brew_install node
 brew_install heroku
 brew_install bash-completion
 brew_install elixir
+
+# Media
 
 cask_install google-chrome
 cask_install hipchat
@@ -97,9 +97,6 @@ cask_install bettertouchtool
 
 # Settings
 defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock
-
-# do robienia screenow
-# do niebieskiego swiatal
 
 # You need to install manualy:
 # f.lux
