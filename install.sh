@@ -94,6 +94,7 @@ cask_install todoist
 cask_install mailbox
 cask_install alfred
 cask_install bettertouchtool
+cask_install libreoffice
 
 # Settings
 defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock
