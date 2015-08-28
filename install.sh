@@ -62,6 +62,13 @@ else
   echo 'rbenv and ruby installed'
 fi
 
+autostart_hidden() {
+  for app; do
+    echo "Autostart: $app"
+    osascript -e "tell application \"System Events\" to make login item at end with properties {path:\"/Applications/$app.app\", hidden:true}" > /dev/null
+  done
+}
+
 brew_install_with_agents postgresql
 brew_install_with_agents mysql
 brew_install_with_agents redis
@@ -101,6 +108,9 @@ cask_install totalterminal
 
 # Settings
 defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock
+
+# Set Autostart
+autostart_hidden BetterTouchTool Monosnap
 
 # You need to install manualy:
 # f.lux
