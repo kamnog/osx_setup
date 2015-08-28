@@ -92,9 +92,12 @@ cask_install iterm2
 cask_install harvest
 cask_install todoist
 cask_install mailbox
-cask_install alfred
 cask_install bettertouchtool
 cask_install libreoffice
+cask_install totalterminal
+
+# Optional/alternative
+# cask_install alfred
 
 # Settings
 defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock
