@@ -102,6 +102,7 @@ cask_install mailbox
 cask_install bettertouchtool
 cask_install libreoffice
 cask_install totalterminal
+cask_install gimp
 
 # Optional/alternative
 # cask_install alfred
