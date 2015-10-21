@@ -82,6 +82,7 @@ brew_install node
 brew_install heroku
 brew_install bash-completion
 brew_install elixir
+brew_install pow
 
 # Media
 
@@ -103,6 +104,7 @@ cask_install bettertouchtool
 cask_install libreoffice
 cask_install totalterminal
 cask_install gimp
+cask_install transmission
 
 # Optional/alternative
 # cask_install alfred
