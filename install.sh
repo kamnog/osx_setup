@@ -105,6 +105,7 @@ cask_install libreoffice
 cask_install totalterminal
 cask_install gimp
 cask_install transmission
+cask_install spectacle
 
 # Optional/alternative
 # cask_install alfred
