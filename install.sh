@@ -25,8 +25,10 @@ cask_install() {
     echo "installing: $1..."
     brew cask install $1
     echo 'finished'
+    brew tap caskroom/versions
   else
     echo "$1 is installed"
+    brew cask update
   fi
 }
 
@@ -95,7 +97,7 @@ cask_install firefox
 cask_install slack
 cask_install atom
 cask_install vlc
-cask_install sublime-text
+cask_install sublime-text3
 cask_install iterm2
 cask_install harvest
 cask_install todoist
@@ -106,6 +108,7 @@ cask_install totalterminal
 cask_install gimp
 cask_install transmission
 cask_install spectacle
+cask_install dash
 
 # Optional/alternative
 # cask_install alfred
