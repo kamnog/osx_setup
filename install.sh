@@ -125,3 +125,4 @@ autostart_hidden BetterTouchTool Monosnap
 # quickcast
 # monosnap
 # caffeine
+# http://qnapi.github.io/
