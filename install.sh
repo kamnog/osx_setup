@@ -126,3 +126,4 @@ autostart_hidden BetterTouchTool Monosnap
 # monosnap
 # caffeine
 # http://qnapi.github.io/
+# discord
