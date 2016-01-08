@@ -109,6 +109,7 @@ cask_install gimp
 cask_install transmission
 cask_install spectacle
 cask_install dash
+cask_install toggldesktop
 
 # Optional/alternative
 # cask_install alfred
