@@ -33,6 +33,7 @@ cask_install() {
 }
 
 brew_install_with_agents() {
+  # todo mkdir ~/Library/LaunchAgents
   if ! type $1; then
     echo "installing: $1..."
     brew install $1
@@ -109,6 +110,7 @@ cask_install transmission
 cask_install spectacle
 cask_install dash
 cask_install toggldesktop
+cask_install slack
 
 # Optional/alternative
 # cask_install alfred
