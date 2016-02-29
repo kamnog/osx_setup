@@ -89,7 +89,7 @@ brew_install pow
 # Media
 
 cask_install google-chrome
-cask_install hipchat
+# cask_install hipchat
 cask_install spotify
 cask_install skype
 cask_install dropbox
@@ -99,7 +99,6 @@ cask_install atom
 cask_install vlc
 cask_install sublime-text3
 cask_install iterm2
-cask_install harvest
 cask_install todoist
 cask_install mailbox
 cask_install bettertouchtool
@@ -115,10 +114,10 @@ cask_install toggldesktop
 # cask_install alfred
 
 # Settings
-defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock
+# defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock
 
 # Set Autostart
-autostart_hidden BetterTouchTool Monosnap
+# autostart_hidden BetterTouchTool Monosnap
 
 # You need to install manualy:
 # f.lux
