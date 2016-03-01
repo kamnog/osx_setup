@@ -56,8 +56,14 @@ if ! type rbenv; then
   echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile
   source ~/.bash_profile
 
-  # Install Ruby
-  rbenv install 2.2.2
+  # Install Ruby # El Capitan hack
+  brew install https://raw.githubusercontent.com/Homebrew/homebrew/b5cffc8d5fc41540a41ed4deba23afbb6431435e/Library/Formula/openssl.rb
+  brew tap homebrew/versions
+  brew switch openssl 1.0.1l
+  brew link openssl --force
+
+  # brew install llvm35 openssl
+  RUBY_CONFIGURE_OPTS="--with-lib-dir=$(brew --prefix openssl)/lib --with-include-dir=$(brew --prefix openssl)/include" rbenv install 2.2.2
   rbenv global 2.2.2
   ruby -v
   gem install bundler
@@ -86,6 +92,7 @@ brew_install heroku
 brew_install bash-completion
 brew_install elixir
 brew_install pow
+brew_install phantomjs
 
 # Media
 
@@ -111,6 +118,11 @@ cask_install spectacle
 cask_install dash
 cask_install toggldesktop
 cask_install slack
+cask_install java
+cask_install opera
+cask_install torbrowser # browser
+# cask_install omnigraffle #charts diagrams
+cask_install steam
 
 # Optional/alternative
 # cask_install alfred

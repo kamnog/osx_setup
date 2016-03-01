@@ -18,3 +18,5 @@ chmod +x install.sh
 [https://gorails.com/setup/osx/10.10-yosemite](https://gorails.com/setup/osx/10.10-yosemite)
 
 [Inspired](https://raw.githubusercontent.com/monterail/guidelines/master/bin/bootstrap)
+
+[Interesting other solution](https://github.com/bkuhlmann/osx)
