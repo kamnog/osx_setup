@@ -123,6 +123,7 @@ cask_install opera
 cask_install torbrowser # browser
 # cask_install omnigraffle #charts diagrams
 cask_install steam
+cask_install pgadmin3
 
 # Optional/alternative
 # cask_install alfred
