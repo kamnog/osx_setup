@@ -125,6 +125,12 @@ cask_install torbrowser # browser
 cask_install steam
 cask_install pgadmin3
 
+# osx audio recording
+# cask_install soundflower https://code.google.com/archive/p/soundflower/downloads
+# cask_install linein
+# http://img.movavi.com/online-help/screencapturemac/1/recording_system_sounds_with_soundflower.htm
+# ^ + linein
+
 # Optional/alternative
 # cask_install alfred
 
