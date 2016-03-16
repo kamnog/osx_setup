@@ -124,6 +124,7 @@ cask_install torbrowser # browser
 # cask_install omnigraffle #charts diagrams
 cask_install steam
 cask_install pgadmin3
+cask_install skitch
 
 # osx audio recording
 # cask_install soundflower https://code.google.com/archive/p/soundflower/downloads
