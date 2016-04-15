@@ -125,6 +125,7 @@ cask_install torbrowser # browser
 cask_install steam
 cask_install pgadmin3
 cask_install skitch
+cask_install calibre
 
 # osx audio recording
 # cask_install soundflower https://code.google.com/archive/p/soundflower/downloads
