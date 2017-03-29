@@ -114,7 +114,7 @@ cask_install libreoffice
 cask_install totalterminal
 cask_install gimp
 cask_install transmission
-cask_install spectacle
+# cask_install spectacle
 cask_install dash
 cask_install toggldesktop
 cask_install slack
@@ -126,6 +126,7 @@ cask_install steam
 cask_install pgadmin3
 cask_install skitch
 cask_install calibre
+cask_install postico
 
 # osx audio recording
 # cask_install soundflower https://code.google.com/archive/p/soundflower/downloads
@@ -134,7 +135,7 @@ cask_install calibre
 # ^ + linein
 
 # Optional/alternative
-# cask_install alfred
+cask_install alfred
 
 # Settings
 # defaults write com.apple.dashboard mcx-disabled -boolean YES && killall Dock
