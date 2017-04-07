@@ -97,34 +97,27 @@ brew_install phantomjs
 # Media
 
 cask_install google-chrome
-# cask_install hipchat
+cask_install firefox
+
 cask_install spotify
 cask_install skype
 cask_install dropbox
-cask_install firefox
 cask_install slack
-cask_install atom
 cask_install vlc
-cask_install sublime-text3
 cask_install iterm2
 cask_install todoist
-cask_install mailbox
 cask_install bettertouchtool
 cask_install libreoffice
 cask_install totalterminal
 cask_install gimp
 cask_install transmission
-# cask_install spectacle
+cask_install spectacle
 cask_install dash
 cask_install toggldesktop
 cask_install slack
 cask_install java
-cask_install opera
-cask_install torbrowser # browser
-# cask_install omnigraffle #charts diagrams
 cask_install steam
 cask_install pgadmin3
-cask_install skitch
 cask_install calibre
 cask_install postico
 
@@ -145,9 +138,10 @@ cask_install alfred
 
 # You need to install manualy:
 # f.lux
-# sunrise
-# quickcast
 # monosnap
-# caffeine
 # http://qnapi.github.io/
 # discord
+# https://sparkmailapp.com/
+# http://www.bear-writer.com/
+# https://code.visualstudio.com/
+# https://www.getharvest.com/
